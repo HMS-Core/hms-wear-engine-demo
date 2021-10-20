@@ -1,0 +1,70 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 4,
+            "releaseType": "Release",
+            "target": 5
+        },
+        "vendor": "huawei",
+        "bundleName": "com.huawei.wearengine.wearable.demo",
+        "version": {
+            "code": 1000000,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "abilities": [
+            {
+                "iconId": 16777219,
+                "orientation": "landscape",
+                "icon": "$media:icon",
+                "description": "$string:mainability_description",
+                "formsEnabled": false,
+                "label": "$string:labe_home",
+                "type": "page",
+                "homeAbility": true,
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "descriptionId": 16777218,
+                "labelId": 16777217,
+                "name": "com.huawei.wearengine.wearable.demo.MainAbility",
+                "launchType": "standard"
+            }
+        ],
+        "deviceType": [
+            "wearable"
+        ],
+        "distro": {
+            "moduleType": "entry",
+            "installationFree": false,
+            "deliveryWithInstall": true,
+            "moduleName": "entry"
+        },
+        "package": "com.huawei.wearengine.wearable.demo",
+        "name": ".WearEngineWearableDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "reqPermissions": [
+            {
+                "reason": "Permission used to request the server.",
+                "name": "com.huawei.health.permission.HW_HEALTH_CLIENT"
+            },
+            {
+                "reason": "Permission used to start other third-party applications",
+                "name": "com.huawei.health.permission.START_APP"
+            }
+        ]
+    }
+}

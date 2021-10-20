@@ -1,0 +1,54 @@
+{
+  "app": {
+    "bundleName": "com.huawei.wearengine.wearable.demo",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 4,
+      "target": 5,
+      "releaseType": "Release"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.wearengine.wearable.demo",
+    "name": ".WearEngineWearableDemo",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "deviceType": [
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formsEnabled": false,
+        "name": "com.huawei.wearengine.wearable.demo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:labe_home",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

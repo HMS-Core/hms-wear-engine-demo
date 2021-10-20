@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="@dimen/hi_wear_demo_margin_8dp"
+    android:orientation="vertical"
+    tools:context=".WearEngineMainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/hi_wear_demo_margin_0dp"
+        android:text="Bound Device List"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/device_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:background="@android:drawable/edit_text"
+        android:orientation="vertical">
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/hi_wear_demo_margin_5dp"
+            android:text="@string/peer_pkg_name" />
+
+        <EditText
+            android:id="@+id/peer_pkg_name_edit_text"
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/edit_text"
+            android:maxHeight="@dimen/hi_wear_demo_margin_30dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/hi_wear_demo_margin_5dp"
+            android:text="@string/dest_message" />
+
+        <EditText
+            android:id="@+id/message_edit_text"
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/edit_text"
+            android:maxHeight="@dimen/hi_wear_demo_margin_30dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+            android:text="@string/device_manager_description" />
+
+        <Button
+            android:id="@+id/get_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="getBoundDevices"
+            android:textAllCaps="false"
+            android:text="@string/get_device" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+        android:text="@string/p2p_manager_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ping_device"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="pingBoundDevices"
+            android:textAllCaps="false"
+            android:text="@string/ping" />
+
+        <Button
+            android:id="@+id/send_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sendMessage"
+            android:textAllCaps="false"
+            android:text="@string/send_message" />
+
+        <Button
+            android:id="@+id/send_file"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="selectFileAndSend"
+            android:textAllCaps="false"
+            android:text="@string/send_file" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="receiveMessage"
+            android:text="@string/receive_message"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancel_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancelReceiveMessage"
+            android:paddingEnd="@dimen/hi_wear_demo_margin_0dp"
+            android:paddingStart="@dimen/hi_wear_demo_margin_0dp"
+            android:text="@string/cancel_receive_message"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+        android:text="@string/monitor_manager_description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/get_monitor_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="registerEventStatus"
+            android:paddingEnd="@dimen/hi_wear_demo_margin_0dp"
+            android:paddingStart="@dimen/hi_wear_demo_margin_0dp"
+            android:text="@string/receive_monitor_report"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/cancel_monitor_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="unRegisterEventStatus"
+            android:paddingEnd="@dimen/hi_wear_demo_margin_0dp"
+            android:paddingStart="@dimen/hi_wear_demo_margin_0dp"
+            android:text="@string/cancel_monitor_report"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sensor_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startSensor"
+            android:text="@string/sensor_text"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/notify_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="startNotify"
+            android:text="@string/notify_text"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/clear_log_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearOutputTextView"
+            android:text="@string/clear_log"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hi_wear_demo_margin_200dp"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_5dp"
+        android:layout_marginBottom="@dimen/hi_wear_demo_margin_8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/log_output_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/edit_text"
+            android:scrollbars="vertical"
+            android:text="@string/log_output" />
+
+    </LinearLayout>
+</LinearLayout>

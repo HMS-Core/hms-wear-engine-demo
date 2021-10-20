@@ -1,0 +1,89 @@
+.container {
+    left: 0;
+    top: 0;
+    width: 454px;
+    height: 1200px;
+    background-color:black;
+}
+
+.registerBtn{
+    left: 50;
+    top: 30;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+    font: 30px;
+}
+
+.unregisterBtn{
+    left: 250;
+    top: 30;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+}
+
+
+.sendMessageBtn{
+    left: 50;
+    top: 120;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+    word-break:break-all;
+}
+
+.sendFileBtn{
+    left: 250;
+    top: 120;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+}
+
+.pingRightBtn{
+    left: 50;
+    top: 210;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+}
+
+.pingWrongBtn{
+    left: 250;
+    top: 210;
+    width: 150px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color:orange;
+}
+
+.receiveMessageText{
+    left: 0;
+    top: 320;
+    width: 454px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    background-color:gray;
+}
+
+.sendMessageText{
+    left: 0;
+    top: 530;
+    width: 454px;
+    height: 100px;
+    text-align: center;
+    background-color:gray;
+}

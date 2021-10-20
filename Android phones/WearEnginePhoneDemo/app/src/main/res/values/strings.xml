@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">WearEngineCodeLab</string>
+
+    <!--MainActivity-->
+    <string name="peer_pkg_name">AppPkgName:</string>
+    <string name="dest_message">MsgContent  :</string>
+    <string name="get_device">getBoundDevices</string>
+    <string name="ping">pingApp</string>
+    <string name="send_message">sendMsg</string>
+    <string name="receive_message">receiveMsg</string>
+    <string name="send_file">sendFile</string>
+    <string name="cancel_receive_message">cancelReceiverMsg</string>
+    <string name="clear_log">clearPrint</string>
+    <string name="log_output">resultPrint:</string>
+    <string name="cancel_monitor_report">removeMonitor</string>
+    <string name="receive_monitor_report">addMonitor</string>
+    <string name="device_manager_description">Obtains bound devices:</string>
+    <string name="p2p_manager_description">P2P communication and Msg management:</string>
+    <string name="monitor_manager_description">Registering or unregistering a listener for monitoring the connection status:</string>
+
+    <string name="sensor_text">Sensor</string>
+    <string name="notify_text">Notification</string>
+    <string name="sync_read_sensor_data">Async reading sensor data</string>
+    <string name="stop_read_sensor_data">Stop reading sensor data</string>
+    <string name="sensor_list_text">Obtains the sensor list</string>
+    <string name="sensor_list_title">Sensor list:</string>
+    <string name="optional_button_style">Optional. The value ranges from 50 to 53, and 50 to 53 correspond to 0 to 3 buttons in the notification.</string>
+    <string name="notify_template">Styles：</string>
+    <string name="notify_package_name">PkgName：</string>
+    <string name="notify_title">Title：</string>
+    <string name="notify_content">Content：</string>
+    <string name="notify_button_first">Button1：</string>
+    <string name="notify_button_second">Button2：</string>
+    <string name="notify_button_third">Button3：</string>
+    <string name="notify_send">Send Notification</string>
+    <string name="mandatory">Mandatory</string>
+    <string name="optional">Optional</string>
+    <string name="current_available_device">Device：</string>
+</resources>

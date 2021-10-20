@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_optional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/hi_wear_demo_margin_10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hi_wear_demo_margin_0dp"
+                android:gravity="end|center_vertical"
+                android:text="@string/current_available_device"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView_device_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/hi_wear_demo_margin_0dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="end|center_vertical"
+            android:text="@string/sensor_list_title"
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:id="@+id/sensor_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:background="@android:drawable/edit_text"
+            android:orientation="vertical" />
+
+
+        <Button
+            android:id="@+id/btn_getSensorList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="getSensorList"
+            android:padding="@dimen/hi_wear_demo_margin_10dp"
+            android:text="@string/sensor_list_text"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_asyncReads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="asyncReadSensorData"
+            android:text="@string/sync_read_sensor_data"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_stopAsyncReads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="stopReadSensorData"
+            android:padding="5dp"
+            android:text="@string/stop_read_sensor_data"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btn_clear_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="clearResult"
+            android:padding="5dp"
+            android:text="@string/clear_log"
+            android:textAllCaps="false"
+            android:textColor="#000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/layout_optional"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/hi_wear_demo_margin_8dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/result_shows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:text="@string/log_output" />
+
+    </LinearLayout>
+</RelativeLayout>

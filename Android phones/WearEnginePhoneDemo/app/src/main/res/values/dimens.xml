@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hi_wear_demo_margin_0dp">0dp</dimen>
+    <dimen name="hi_wear_demo_margin_5dp">5dp</dimen>
+    <dimen name="hi_wear_demo_margin_8dp">8dp</dimen>
+    <dimen name="hi_wear_demo_margin_10dp">10dp</dimen>
+    <dimen name="hi_wear_demo_margin_30dp">30dp</dimen>
+    <dimen name="hi_wear_demo_margin_40dp">40dp</dimen>
+    <dimen name="hi_wear_demo_margin_50dp">50dp</dimen>
+    <dimen name="hi_wear_demo_margin_160dp">100dp</dimen>
+    <dimen name="hi_wear_demo_margin_200dp">150dp</dimen>
+</resources>

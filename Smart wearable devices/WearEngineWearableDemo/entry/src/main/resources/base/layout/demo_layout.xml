@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:id="$+id:main_root"
+    ohos:width="match_parent"
+    ohos:height="match_parent">
+
+    <DirectionalLayout
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:orientation="vertical"
+        ohos:top_padding="30vp"
+        ohos:bottom_padding="30vp"
+        ohos:left_padding="50vp"
+        ohos:right_padding="50vp"
+        ohos:background_element="#FF333333">
+
+        <Button
+            ohos:id="$+id:ping"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="PING"
+            ohos:text_size="16vp"
+            ohos:text_color="#FFFFFFFF"
+            ohos:text_style="bold"
+            ohos:background_element="$graphic:button_normal"/>
+
+        <Text
+            ohos:id="$+id:ping_result"
+            ohos:width="match_content"
+            ohos:height="40vp"
+            ohos:top_margin="10vp"
+            ohos:text_color="#FFFFFFFF"
+            ohos:text="ping result: "
+            ohos:text_size="16vp"/>
+
+        <Button
+            ohos:id="$+id:register_receiver"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="Receive msg"
+            ohos:text_size="16vp"
+            ohos:text_color="#FFFFFFFF"
+            ohos:top_margin="10vp"
+            ohos:text_style="bold"
+            ohos:background_element="$graphic:button_normal"/>
+
+        <Text
+            ohos:id="$+id:received_msg"
+            ohos:width="match_content"
+            ohos:height="40vp"
+            ohos:top_margin="10vp"
+            ohos:text_color="#FFFFFFFF"
+            ohos:text="received msg: "
+            ohos:ellipsize="marquee"
+            ohos:text_size="16vp"/>
+
+        <Button
+            ohos:id="$+id:send_data"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="Send msg"
+            ohos:text_size="16vp"
+            ohos:top_margin="10vp"
+            ohos:text_style="bold"
+            ohos:text_color="#FFFFFFFF"
+            ohos:background_element="$graphic:button_normal"/>
+
+        <Text
+            ohos:id="$+id:send_data_result"
+            ohos:width="match_content"
+            ohos:height="40vp"
+            ohos:top_margin="10vp"
+            ohos:text="result: "
+            ohos:text_color="#FFFFFFFF"
+            ohos:text_size="16vp"/>
+
+        <Button
+            ohos:id="$+id:cancel_receive_data"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="Stop Receiving"
+            ohos:text_size="16vp"
+            ohos:top_margin="10vp"
+            ohos:text_style="bold"
+            ohos:text_color="#FFFFFFFF"
+            ohos:background_element="$graphic:button_normal"/>
+
+        <Button
+            ohos:id="$+id:send_file"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="Send File"
+            ohos:text_size="16vp"
+            ohos:top_margin="10vp"
+            ohos:text_style="bold"
+            ohos:text_color="#FFFFFFFF"
+            ohos:background_element="$graphic:button_normal"/>
+
+        <Text
+            ohos:id="$+id:send_file_progress"
+            ohos:width="match_content"
+            ohos:height="40vp"
+            ohos:top_margin="10vp"
+            ohos:text="progress: "
+            ohos:text_color="#FFFFFFFF"
+            ohos:text_size="16vp"/>
+
+        <Text
+            ohos:id="$+id:send_file_result"
+            ohos:width="match_content"
+            ohos:height="40vp"
+            ohos:top_margin="10vp"
+            ohos:text="result: "
+            ohos:text_color="#FFFFFFFF"
+            ohos:text_size="16vp"/>
+
+        <Button
+            ohos:id="$+id:clear_data"
+            ohos:width="120vp"
+            ohos:height="40vp"
+            ohos:text="Clear"
+            ohos:text_size="16vp"
+            ohos:top_margin="10vp"
+            ohos:text_style="bold"
+            ohos:text_color="#FFFFFFFF"
+            ohos:background_element="$graphic:button_normal"/>
+    </DirectionalLayout>
+</ScrollView>

@@ -1,0 +1,67 @@
+{
+    "app": {
+        "bundleName": "com.huawei.wearengine.wearable.demo",
+        "vendor": "huawei",
+        "apiVersion": {
+            "compatible": 4,
+            "target": 5,
+            "releaseType": "Release"
+        },
+        "version": {
+            "code": 1000000,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "name": ".WearEngineWearableDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "deviceType": [
+            "wearable"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": false
+        },
+        "abilities": [
+            {
+                "name": "com.huawei.wearengine.wearable.demo.MainAbility",
+                "description": "$string:mainability_description",
+                "icon": "$media:icon",
+                "label": "$string:labe_home",
+                "type": "page",
+                "launchType": "standard",
+                "orientation": "landscape",
+                "skills": [
+                    {
+                        "actions": [
+                            "action.system.home"
+                        ],
+                        "entities": [
+                            "entity.system.home"
+                        ]
+                    }
+                ],
+                "formsEnabled": false,
+                "homeAbility": true
+            }
+        ],
+        "reqPermissions": [
+            {
+                "name": "com.huawei.health.permission.HW_HEALTH_CLIENT",
+                "reason": "Permission used to request the server."
+            },
+            {
+                "name": "com.huawei.health.permission.START_APP",
+                "reason": "Permission used to start other third-party applications"
+            }
+        ],
+        "package": "com.huawei.wearengine.wearable.demo"
+    }
+}

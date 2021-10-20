@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/layout_optional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hi_wear_demo_margin_10dp"
+        android:orientation="vertical"
+        android:padding="@dimen/hi_wear_demo_margin_10dp">
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/current_available_device" />
+
+            <TextView
+                android:id="@+id/text_notify_device"
+                style="@style/NotifyEditText"
+                android:hint="@string/mandatory" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_package_name" />
+
+            <EditText
+                android:id="@+id/edit_notify_package_name"
+                style="@style/NotifyEditText"
+                android:hint="@string/mandatory" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_title" />
+
+            <EditText
+                android:id="@+id/edit_notify_title"
+                style="@style/NotifyEditText"
+                android:hint="@string/mandatory" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_content" />
+
+            <EditText
+                android:id="@+id/edit_notify_content"
+                style="@style/NotifyEditText"
+                android:hint="@string/mandatory" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_template" />
+
+            <EditText
+                android:id="@+id/edit_notify_template"
+                style="@style/NotifyEditText"
+                android:hint="@string/optional_button_style" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_button_first" />
+
+            <EditText
+                android:id="@+id/edit_notify_button_one"
+                style="@style/NotifyEditText"
+                android:hint="@string/optional" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_button_second" />
+
+            <EditText
+                android:id="@+id/edit_notify_button_two"
+                style="@style/NotifyEditText"
+                android:hint="@string/optional" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/NotifyLayout">
+
+            <TextView
+                style="@style/NotifyText"
+                android:text="@string/notify_button_third" />
+
+            <EditText
+                android:id="@+id/edit_notify_button_three"
+                style="@style/NotifyEditText"
+                android:hint="@string/optional" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/hi_wear_demo_margin_30dp">
+
+            <Button
+                android:id="@+id/send_notify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/hi_wear_demo_margin_10dp"
+                android:layout_weight="1"
+                android:onClick="sendNotification"
+                android:text="@string/notify_send"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/clear_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/hi_wear_demo_margin_10dp"
+                android:layout_weight="1"
+                android:onClick="clearResult"
+                android:text="@string/clear_log"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/layout_optional"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/hi_wear_demo_margin_8dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/result_shows"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            android:text="@string/log_output" />
+
+    </LinearLayout>
+
+</RelativeLayout>

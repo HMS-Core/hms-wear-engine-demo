@@ -1,0 +1,66 @@
+{
+    "app": {
+        "apiVersion": {
+            "compatible": 4,
+            "releaseType": "Release",
+            "target": 5
+        },
+        "vendor": "huawei",
+        "bundleName": "com.huawei.wearengine.wearable.demo",
+        "version": {
+            "code": 1000000,
+            "name": "1.0"
+        }
+    },
+    "deviceConfig": {
+        
+    },
+    "module": {
+        "deviceType": [
+            "wearable"
+        ],
+        "abilities": [
+            {
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "orientation": "landscape",
+                "name": "com.huawei.wearengine.wearable.demo.WearEngineWearableDemo",
+                "icon": "$media:icon",
+                "description": "$string:mainability_description",
+                "formsEnabled": false,
+                "label": "$string:labelxxx",
+                "type": "page",
+                "launchType": "standard",
+                "homeAbility": true
+            }
+        ],
+        "distro": {
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "moduleName": "WearEngineWearableDemo"
+        },
+        "package": "com.huawei.wearengine.wearable.demo",
+        "name": ".WearEngineWearableDemo",
+        "reqCapabilities": [
+            "video_support"
+        ],
+        "reqPermissions": [
+            {
+                "reason": "Permission used to request the server.",
+                "name": "com.huawei.health.permission.HW_HEALTH_CLIENT"
+            },
+            {
+                "reason": "Permission used to start other third-party applications",
+                "name": "com.huawei.health.permission.START_APP"
+            }
+        ]
+    }
+}

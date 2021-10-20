@@ -1,0 +1,33 @@
+apply plugin: 'com.huawei.ohos.hap'
+ohos {
+    compileSdkVersion 3
+    defaultConfig {
+        compatibleSdkVersion 3
+    }
+    signingConfigs {
+        debug {
+            storeFile file('')
+            storePassword ''
+            keyAlias ''
+            keyPassword ''
+            signAlg ''
+            profile file('')
+            certpath file('')
+        }
+        release {
+            storeFile file('')
+            storePassword ''
+            keyAlias ''
+            keyPassword ''
+            signAlg ''
+            profile file('')
+            certpath file('')
+        }
+    }
+    
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile'junit:junit:4.12'
+}

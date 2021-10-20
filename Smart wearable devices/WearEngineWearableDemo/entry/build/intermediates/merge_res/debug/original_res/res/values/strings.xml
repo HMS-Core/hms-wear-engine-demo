@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="labe_home">"WearEngineWearableDemo"</string>
+  <string name="mainability_description">"hap sample empty page"</string>
+</resources>

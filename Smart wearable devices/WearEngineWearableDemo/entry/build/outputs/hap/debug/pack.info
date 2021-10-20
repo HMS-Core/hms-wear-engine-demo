@@ -1,0 +1,45 @@
+{
+    "summary": {
+        "app": {
+            "bundleName": "com.huawei.wearengine.wearable.demo",
+            "version": {
+                "code": 1000000,
+                "name": "1.0"
+            }
+        },
+        "modules": [
+            {
+                "deviceType": [
+                    "wearable"
+                ],
+                "abilities": [
+                    {
+                        "name": "com.huawei.wearengine.wearable.demo.MainAbility",
+                        "label": "$string:labe_home"
+                    }
+                ],
+                "distro": {
+                    "moduleType": "entry",
+                    "installationFree": false,
+                    "deliveryWithInstall": true,
+                    "moduleName": "entry"
+                },
+                "apiVersion": {
+                    "compatible": 4,
+                    "releaseType": "Release",
+                    "target": 5
+                }
+            }
+        ]
+    },
+    "packages": [
+        {
+            "deviceType": [
+                "wearable"
+            ],
+            "moduleType": "entry",
+            "deliveryWithInstall": true,
+            "name": "entry-debug-rich-unsigned"
+        }
+    ]
+}

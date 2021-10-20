@@ -1,0 +1,14 @@
+apply plugin: 'com.huawei.ohos.hap'
+ohos {
+
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 4
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.har'])
+    testCompile'junit:junit:4.13'
+    implementation 'com.huawei.hms:wearengine-wearable-harmonyos:5.0.2.302'
+}

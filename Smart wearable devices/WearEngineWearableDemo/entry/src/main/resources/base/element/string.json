@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "WearEngineWearableDemo"
+    },
+    {
+      "name": "mainability_description",
+      "value": "hap sample empty page"
+    },
+    {
+      "name": "labe_home",
+      "value": "WearEngineWearableDemo"
+    }
+  ]
+}

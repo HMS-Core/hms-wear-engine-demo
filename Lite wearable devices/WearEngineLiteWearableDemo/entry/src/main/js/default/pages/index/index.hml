@@ -1,0 +1,10 @@
+<stack class="container" onswipe="swipeEvent">
+    <text class="registerBtn" onclick="registerMessage"> .&#10;Register</text>
+    <text class="unregisterBtn" onclick="unregisterMessage">Un&#10;register</text>
+    <text class="sendMessageBtn" onclick="sendMessage">Send&#10;Message</text>
+    <text class="sendFileBtn" onclick="sendFile">Send&#10;File</text>
+    <text class="pingRightBtn" onclick="pingRight">Ping&#10;Correct</text>
+    <text class="pingWrongBtn" onclick="pingFalse">Ping&#10;Wrong</text>
+    <text class="receiveMessageText">{{receiveMessgeOK}}</text>
+    <text class="sendMessageText">{{operateMessage}}</text>
+</stack>
