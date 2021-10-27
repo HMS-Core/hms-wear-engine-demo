@@ -1,5 +1,7 @@
 # Wear Engine Phone Demo
 
+中文 | [English](README.md)
+
 ## 目录
 
 -   [简介](#简介)
