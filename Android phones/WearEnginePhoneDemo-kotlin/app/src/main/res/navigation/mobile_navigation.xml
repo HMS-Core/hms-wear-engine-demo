@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_device">
+
+    <fragment
+        android:id="@+id/navigation_device"
+        android:name="com.huawei.sample.wearable.demo.ui.device.DeviceFragment"
+        android:label="@string/title_device"
+        tools:layout="@layout/fragment_device" />
+
+    <fragment
+        android:id="@+id/navigation_data"
+        android:name="com.huawei.sample.wearable.demo.ui.data.DataFragment"
+        android:label="@string/title_data"
+        tools:layout="@layout/fragment_data" />
+
+    <fragment
+        android:id="@+id/navigation_file"
+        android:name="com.huawei.sample.wearable.demo.ui.file.FileFragment"
+        android:label="@string/title_file"
+        tools:layout="@layout/fragment_file" />
+
+    <fragment
+        android:id="@+id/navigation_action"
+        android:name="com.huawei.sample.wearable.demo.ui.action.ActionFragment"
+        android:label="@string/title_action"
+        tools:layout="@layout/fragment_action" />
+
+</navigation>

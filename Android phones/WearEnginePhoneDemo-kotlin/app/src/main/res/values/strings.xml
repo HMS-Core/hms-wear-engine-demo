@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WearEngine demo</string>
+    <string name="title_device">Smartwatch</string>
+    <string name="title_data">Text</string>
+    <string name="title_file">Document</string>
+    <string name="title_action">Action</string>
+    <string name="send">Send</string>
+    <string name="stop">Stop</string>
+    <string name="choose_from_storage">Select from storage</string>
+    <string name="close">Close</string>
+    <string name="received_image">Received pictures</string>
+    <string name="view_received_file">Check the received files</string>
+
+    <string name="button_sensor">Sensor</string>
+    <string name="button_notify">Notification</string>
+    <string name="clear_log">Clear log</string>
+
+    <string name="sensor_current_device">Current device: </string>
+    <string name="sensor_list_title">Sensor list</string>
+    <string name="sensor_list_text">Get sensor list</string>
+    <string name="sensor_async_read">Async read sensor data</string>
+    <string name="sensor_stop_read">Stop reading sensor data</string>
+
+    <string name="notify_current_device">Current device: </string>
+    <string name="notify_package_name">Package name</string>
+    <string name="notify_title">Title</string>
+    <string name="notify_content">Content</string>
+    <string name="notify_template">Template ID</string>
+    <string name="notify_template_hint">50/51/52/53</string>
+    <string name="notify_button_first">Button 1</string>
+    <string name="notify_button_second">Button 2</string>
+    <string name="notify_button_third">Button 3</string>
+    <string name="notify_mandatory">Mandatory</string>
+    <string name="notify_optional">Optional</string>
+    <string name="notify_send">Send notification</string>
+</resources>
